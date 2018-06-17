@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    tools:context="com.example.guoba.learnmaori.MainActivity">
+
+    <android.support.v7.widget.CardView
+        style="@style/CategoryCardStyle"
+        android:id="@+id/card_numbers"
+        app:cardBackgroundColor="@android:color/holo_green_light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/card_numbers_logo"
+            style="@style/CategoryImageStyle"
+            android:src="@drawable/icon_numbers"
+            android:transitionName="numbers_logo"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/card_numbers_text"
+                    style="@style/CategoryTextStyle"
+                    android:text="@string/numbers_title"
+                    android:transitionName="numbers_text"/>
+                <TextView
+                    android:id="@+id/card_numbers_text_details"
+                    style="@style/CategoryTextStyle"
+                    android:textSize="20sp"
+                    android:text="Practice how numbers 1-10 are pronounced in Māori."
+                    android:layout_below="@id/card_numbers_text"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/CategoryCardStyle"
+        android:id="@+id/card_family_memebers"
+        app:cardBackgroundColor="@android:color/holo_blue_light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/card_family_memebers_logo"
+                style="@style/CategoryImageStyle"
+                android:src="@drawable/icon_family"
+                android:transitionName="family_members_logo"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/card_family_members_text"
+                    style="@style/CategoryTextStyle"
+                    android:text="@string/family_members_title"
+                    android:transitionName="family_members_text" />
+                <TextView
+                    android:id="@+id/card_family_members_text_details"
+                    style="@style/CategoryTextStyle"
+                    android:textSize="20sp"
+                    android:text="Practice and learn immediate whānau."
+                    android:layout_below="@id/card_family_members_text"/>
+            </RelativeLayout>
+        </LinearLayout>
+     </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/CategoryCardStyle"
+        android:id="@+id/card_colors"
+        app:cardBackgroundColor="@android:color/holo_orange_light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/card_colors_logo"
+                style="@style/CategoryImageStyle"
+                android:src="@drawable/icon_colors"
+                android:transitionName="colors_logo" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/card_colors_text"
+                    style="@style/CategoryTextStyle"
+                    android:text="@string/colors_title"
+                    android:transitionName="colors_text" />
+                <TextView
+                    android:id="@+id/card_colors_text_details"
+                    style="@style/CategoryTextStyle"
+                    android:textSize="20sp"
+                    android:text="A collection of Māori colours and their pronunciations."
+                    android:layout_below="@id/card_colors_text"/>
+            </RelativeLayout>
+       </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
